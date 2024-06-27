@@ -16,7 +16,7 @@ public class runner {
     @BeforeTest
     public void setUp() {
         // Initialize WebDriver
-        driver = new FirefoxDriver();
+    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Desktop\\Seed Tution\\Setup\\chromedriver-win64\\chromedriver.exe");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
